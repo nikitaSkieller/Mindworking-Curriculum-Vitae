@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Mindworking_Curriculum_Vitae.Data;
 using Mindworking_Curriculum_Vitae.Models;
-using HotChocolate.Data;
 
 public class Query
 {
