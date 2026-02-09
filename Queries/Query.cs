@@ -12,5 +12,7 @@ public class Query
 
     public IQueryable<Education> GetEducations([Service] CvDbContext db) => db.Educations;
 
+    public IQueryable<Project> GetProjects([Service] CvDbContext db) => db.Projects;
+
     public IQueryable<Skill> GetSkills([Service] CvDbContext db) => db.Skills;
 }
