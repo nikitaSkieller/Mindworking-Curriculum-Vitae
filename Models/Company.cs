@@ -1,13 +1,24 @@
 ﻿namespace Mindworking_Curriculum_Vitae.Models
 {
+    using System.ComponentModel.DataAnnotations;
+
     public class Company
     {
+        [Key]
+        [ID]
         public int Id { get; set; }
-        public string Name { get; set; } = "";
-        public string Title { get; set; } = "";
+
+        [Required]
+        public string Name { get; set; } = string.Empty;
+
+        [Required]
+        public string Title { get; set; } = string.Empty;
+
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
-        public string Summary { get; set; } = "";
+
+        [Required]
+        public string Summary { get; set; } = string.Empty;
 
         public List<Project> Projects { get; set; } = new();
     }

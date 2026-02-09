@@ -7,7 +7,9 @@ builder.Services.AddDbContext<CvDbContext>(opt =>
     opt.UseSqlite("Data Source=cv.db"));
 
 builder.Services.AddGraphQLServer()
-    .AddQueryType<Query>();
+    .AddQueryType<Query>()
+    .AddFiltering()
+    .AddSorting();
 
 var app = builder.Build();
 

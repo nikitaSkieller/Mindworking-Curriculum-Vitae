@@ -1,15 +1,12 @@
-﻿using Mindworking_Curriculum_Vitae.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Mindworking_Curriculum_Vitae.Models;
 
-namespace Mindworking_Curriculum_Vitae.Data
+public class CvDbContext : DbContext
 {
-    public class CvDbContext : DbContext
-    {
-        public CvDbContext(DbContextOptions<CvDbContext> options) : base(options) { }
+    public CvDbContext(DbContextOptions<CvDbContext> options) : base(options) { }
 
-        public DbSet<Company> Companies => Set<Company>();
-        public DbSet<Project> Projects => Set<Project>();
-        public DbSet<Education> Educations => Set<Education>();
-        public DbSet<Skill> Skills => Set<Skill>();
-    }
+    public DbSet<Company> Companies { get; set; } = default!;
+    public DbSet<Project> Projects { get; set; } = default!;
+    public DbSet<Education> Educations { get; set; } = default!;
+    public DbSet<Skill> Skills { get; set; } = default!;
 }
