@@ -1,0 +1,22 @@
+﻿{
+  "errors": [
+    {
+      "message": "The field `description` does not exist on the type `Project`.",
+      "locations": [
+        {
+          "line": 5,
+          "column": 17
+        }
+      ],
+      "path": [
+        "projectById"
+      ],
+      "extensions": {
+        "type": "Project",
+        "field": "description",
+        "responseName": "description",
+        "specifiedBy": "https://spec.graphql.org/October2021/#sec-Field-Selections-on-Objects-Interfaces-and-Unions-Types"
+      }
+    }
+  ]
+}

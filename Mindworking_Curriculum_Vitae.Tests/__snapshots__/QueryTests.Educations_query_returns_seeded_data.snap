@@ -1,0 +1,58 @@
+﻿{
+  "errors": [
+    {
+      "message": "The field `institution` does not exist on the type `Education`.",
+      "locations": [
+        {
+          "line": 5,
+          "column": 19
+        }
+      ],
+      "path": [
+        "educations",
+        "nodes"
+      ],
+      "extensions": {
+        "type": "Education",
+        "field": "institution",
+        "responseName": "institution",
+        "specifiedBy": "https://spec.graphql.org/October2021/#sec-Field-Selections-on-Objects-Interfaces-and-Unions-Types"
+      }
+    },
+    {
+      "message": "The field `title` does not exist on the type `Education`.",
+      "locations": [
+        {
+          "line": 6,
+          "column": 19
+        }
+      ],
+      "path": [
+        "educations",
+        "nodes"
+      ],
+      "extensions": {
+        "type": "Education",
+        "field": "title",
+        "responseName": "title",
+        "specifiedBy": "https://spec.graphql.org/October2021/#sec-Field-Selections-on-Objects-Interfaces-and-Unions-Types"
+      }
+    },
+    {
+      "message": "The specified input object field `institution` does not exist.",
+      "locations": [
+        {
+          "line": 3,
+          "column": 35
+        }
+      ],
+      "path": [
+        "educations"
+      ],
+      "extensions": {
+        "field": "institution",
+        "specifiedBy": "https://spec.graphql.org/October2021/#sec-Input-Object-Field-Names"
+      }
+    }
+  ]
+}
