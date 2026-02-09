@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using HotChocolate;
 
 namespace Mindworking_Curriculum_Vitae.Models
 {
