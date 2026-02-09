@@ -5,7 +5,6 @@
     public class Company
     {
         [Key]
-        [ID]
         public int Id { get; set; }
 
         [Required]

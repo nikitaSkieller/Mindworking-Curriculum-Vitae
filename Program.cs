@@ -1,13 +1,19 @@
 using Microsoft.EntityFrameworkCore;
 using Mindworking_Curriculum_Vitae.Data;
+using Mindworking_Curriculum_Vitae.GraphQL.Types;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<CvDbContext>(opt =>
     opt.UseSqlite("Data Source=cv.db"));
 
-builder.Services.AddGraphQLServer()
+builder.Services
+    .AddGraphQLServer()
     .AddQueryType<Query>()
+    .AddType<SkillType>()
+    .AddType<CompanyType>()
+    .AddType<ProjectType>()
+    .AddType<EducationType>()
     .AddFiltering()
     .AddSorting();
 

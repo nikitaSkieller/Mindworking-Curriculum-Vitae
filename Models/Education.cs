@@ -1,12 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using HotChocolate;
 
 namespace Mindworking_Curriculum_Vitae.Models
 {
     public class Education
     {
         [Key]
-        [ID]
         public int Id { get; set; }
 
         [Required]

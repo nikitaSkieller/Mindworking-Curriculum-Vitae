@@ -5,7 +5,6 @@ namespace Mindworking_Curriculum_Vitae.Models
     public class Skill
     {
         [Key]
-        [ID]
         public int Id { get; set; }
 
         [Required]
