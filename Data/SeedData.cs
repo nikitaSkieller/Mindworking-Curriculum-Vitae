@@ -1,5 +1,4 @@
 ﻿using Mindworking_Curriculum_Vitae.Models;
-using System.Collections.Generic;
 
 namespace Mindworking_Curriculum_Vitae.Data
 {
