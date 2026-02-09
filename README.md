@@ -6,20 +6,20 @@ The CV includes information about education, work experience, skills, projects, 
 Via GraphQL, you can query for specific information in the CV, such as education history or work experience.
 
 ## Techstack
-•	Language and runtime: C# 12, .NET 8
-•	Web framework: ASP.NET Core minimal hosting
-•	GraphQL server: Hot Chocolate (AddGraphQLServer, filtering, sorting, paging)
-•	Data access: Entity Framework Core
-•	Database: SQLite (Data Source=cv.db)
-•	Project type: SDK-style .NET project
-•	Testing: xUnit with snapshot-style tests
-•	Repository: Git (GitHub)
+ï¿½	Language and runtime: C# 12, .NET 8
+ï¿½	Web framework: ASP.NET Core minimal hosting
+ï¿½	GraphQL server: Hot Chocolate (AddGraphQLServer, filtering, sorting, paging)
+ï¿½	Data access: Entity Framework Core
+ï¿½	Database: SQLite (Data Source=cv.db)
+ï¿½	Project type: SDK-style .NET project
+ï¿½	Testing: xUnit with snapshot-style tests
+ï¿½	Repository: Git (GitHub)
 
 ## Data
 The database is seeded automatically when started.
 
 ## Testing
-
+The tests cover the app schema and the queries.
 
 ## Run
 Run in visual studio or via command line with `dotnet run` in the project directory. The GraphQL endpoint will be available at `http://localhost:[port]/graphql` and you will be redirected directly.
