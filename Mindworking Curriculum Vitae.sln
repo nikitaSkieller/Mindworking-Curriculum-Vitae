@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36623.8 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindworking Curriculum Vitae", "Mindworking Curriculum Vitae.csproj", "{AD897529-03A5-418A-88C6-6E56540F778A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindworking_Curriculum_Vitae.Tests", "..\Mindworking_Curriculum_Vitae.Tests\Mindworking_Curriculum_Vitae.Tests.csproj", "{EBBBFC9E-1961-4146-9EAB-43547CA54418}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindworking_Curriculum_Vitae.Tests", "..\Mindworking_Curriculum_Vitae.Tests\Mindworking_Curriculum_Vitae.Tests.csproj", "{145659B6-06F6-1108-D680-C779890A984E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{AD897529-03A5-418A-88C6-6E56540F778A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD897529-03A5-418A-88C6-6E56540F778A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD897529-03A5-418A-88C6-6E56540F778A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EBBBFC9E-1961-4146-9EAB-43547CA54418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EBBBFC9E-1961-4146-9EAB-43547CA54418}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EBBBFC9E-1961-4146-9EAB-43547CA54418}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EBBBFC9E-1961-4146-9EAB-43547CA54418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{145659B6-06F6-1108-D680-C779890A984E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145659B6-06F6-1108-D680-C779890A984E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145659B6-06F6-1108-D680-C779890A984E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145659B6-06F6-1108-D680-C779890A984E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
