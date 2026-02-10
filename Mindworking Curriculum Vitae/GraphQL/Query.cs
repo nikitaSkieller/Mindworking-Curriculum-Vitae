@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Mindworking_Curriculum_Vitae.Models;
+using Mindworking_Curriculum_Vitae.Services.Companies;
 
 public class Query
 {
@@ -9,7 +10,13 @@ public class Query
     public IQueryable<Company> GetCompanies([Service] CvDbContext db) =>
         db.Companies
           .Include(e => e.Projects)
-          .OrderByDescending(e => e.StartDate); 
+          .OrderByDescending(e => e.StartDate);
+
+    [UsePaging(MaxPageSize = 50, DefaultPageSize = 10)]
+    [UseFiltering]
+    [UseSorting]
+    public IQueryable<Company> GetActiveCompanies([Service] ICompanyService companies) =>
+        companies.GetActiveCompanies();
 
     public Task<Company?> GetCompanyById([ID] int id, [Service] CvDbContext db) =>
         db.Companies
