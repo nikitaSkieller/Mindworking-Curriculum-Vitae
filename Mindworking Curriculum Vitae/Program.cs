@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Mindworking_Curriculum_Vitae.Data;
+using Mindworking_Curriculum_Vitae.GraphQL;
 using Mindworking_Curriculum_Vitae.GraphQL.Types;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,7 @@ builder.Services.AddDbContext<CvDbContext>(opt =>
 builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()
+    .AddMutationType<Mutation>()
     .AddType<SkillType>()
     .AddType<CompanyType>()
     .AddType<ProjectType>()
